@@ -1,2 +1,3 @@
-# express-mongodb-crud
-CRUD Application in NODE JS
+# CRUD with Nodejs, Express and Mongodb
+![](docs/screenshot.png)
+

@@ -1,0 +1,33 @@
+<% include partials/_header %>
+
+<div class="container">
+  <div class="row">
+    <!--FORM-->
+    <div class="col-md-5 offset-md-3">
+      <div class="card">
+        <div class="card-body">
+          <form action="/edit/<%= user._id %>" method="post">
+            <div class="form-group">
+              <input class="form-control" type="text" name="userName" placeholder="Title" value="<%= user.userName %>">
+            </div>
+            <div class="form-group">
+              <input class="form-control" type="text" name="emailId" placeholder="Title" value="<%= user.emailId %>">
+            </div>
+            <div class="form-group">
+                <select  class="form-control" name="role">
+                    <option value="1">Admin</option>
+                    <option value="2">Operation</option>
+                    <option value="3">Sales</option>
+                </select>
+            </div>
+            <button class="btn btn-primary" type="submit">
+              Update 
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<% include partials/_footer%>
